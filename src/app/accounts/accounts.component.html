@@ -1,0 +1,39 @@
+<div class="container mt-5">
+    <div class="card " *ngIf="accounts">
+        <div class="card-header ">Customers</div>
+        <div class="card-body ">
+    
+    
+    
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">ID</th>
+    
+            <th scope="col">Type</th>
+            <th scope="col">Balance</th>
+            <th scope="col">CreatedAt</th>
+            <th scope="col">customerDTO</th>
+            <th scope="col">Status</th>
+
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let acc of accounts">
+            <th scope="row">1</th>
+            <td>{{acc.id}}</td>
+            <td>{{acc.type}}</td>
+            <td>{{acc.balance}}</td>
+            <td>{{acc.createdAt}}</td>
+            <td>{{acc.customerDTO}}</td>
+            <td>{{acc.status}}</td>
+
+
+
+          </tr>
+       
+        </tbody>
+      </table></div>    </div>
+    
+    </div>
